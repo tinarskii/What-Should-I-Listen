@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ฟังเพลงไรดี</title>
+	<link rel="stylesheet" href="./public/stylesheet.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1/dist/tailwind.min.css">
+</head>
+<body>
+	<div class="h-screen grid place-items-center">
+		<div class="title md:text-5xl text-2xl text-black p-8 text-center font-bold">
+			🎧ฟังเพลงไรดี🎶
+		</div>
+		<div id="player">
+			<iframe class="shadow-2xl rounded-lg" src="" id="playframe" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="song md:text-5xl text-2xl text-black p-8 text-center font-bold">
+
+		</div>
+		<div class="flex">
+			<button class='bwd transition duration-300 p-4 border border-black bg-gray-500 text-white font-bold mb-8 rounded-lg hover:opacity-50 mr-3'>
+				⏪
+			</button>
+			<button class='button btn transition duration-300 p-4 border border-black bg-green-500 text-white font-bold mb-8 rounded-lg hover:opacity-50' onclick="resetHash()">
+				🎲สุ่มใหม่
+			</button>
+			<button class='button transition duration-300 p-4 border border-black bg-blue-500 text-white font-bold mb-8 rounded-lg hover:opacity-50 ml-3' onclick="window.open('https:\/\/www.facebook.com/sharer/sharer.php?u=song.tinnaphat.xyz')">
+				🪑แชร์ดิ
+			</button>
+			<button class='button transition duration-300 p-4 border border-black bg-green-500 text-white font-bold mb-8 rounded-lg hover:opacity-50 ml-3' onclick="window.open('https:\/\/github.com/narze/torpleng#entries')">
+				📃ดูเพลงทั้งหมด
+			</button>
+			<button class='fwd transition duration-300 p-4 border border-black bg-gray-500 text-white font-bold mb-8 rounded-lg hover:opacity-50 ml-3'>
+				⏩
+			</button>
+		</div>
+	</div>
+	<div class="m-4 text-xl opacity-50 font-bold">
+		By TinTinnaphat <a href="https://github.com/Tin-Tinnaphat/What-Should-I-Listen">(Source Code)</a>
+	</div>
+</body>
+<script src="./public/script.js"></script>
+</html>

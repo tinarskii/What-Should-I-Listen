@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+.title, .song, .button {
+	font-family: 'Prompt', sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+#playframe {
+	width: 50vw;
+	height: 60vh;
+}
